@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+font-family: 'Ubuntu Condensed', sans-serif;
+color: grey;
+  }
+  
+  .heading h1{
+
+   font-family: 'Ubuntu Condensed', sans-serif;
+   color: #ff861a;
+   }
+
+   .heading2 h2{
+
+   font-family: 'Ubuntu Condensed', sans-serif;
+   color: #fba355;
+
+   }
+
+
+   .ui-page { 
+    background:white;
+
+}
+
+
+
+

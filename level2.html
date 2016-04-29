@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+<title>mobile app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
+<link href="style.css" rel="stylesheet">
+
+<style>
+.description{
+	 
+    font-size: 15px !important;
+    color: #ff861a;
+      font-family: 'Ubuntu Condensed', sans-serif;
+   
+}
+
+
+.heading h1{
+
+   font-family: 'Ubuntu Condensed', sans-serif;
+   color: #ff861a;
+   }
+
+
+
+</style>
+</head>
+<body>
+
+<div data-role="header" style="background:#FF9B0A">
+<h1><span style="color:white;">Level Two</h1>
+  <a  style="background:#FF9B0A" href="index.html" data-ajax="false" class="ui-btn ui-btn-right ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left" <h1><span style="color:white;">Back</a>
+</div>
+
+<div class="heading">
+ <center>
+
+<h1>Te Papa Exhibition App </h1>
+
+<img src="img/logo5.jpg" alt="Cinque Terre" width="10%" height="10%">
+
+
+<h1> Level Two Exhibitions </h1>
+ 
+<ul data-role="listview" data-inset="true" data-filter="true" >
+ 
+<li data-icon="carat-r"><a style="background:white" href="war.html" data-transition="pop">
+
+<div class="description"> Gallipoli: The scale of our war </h3> </div>
+ 
+<li data-icon="carat-r"><a style="background:white" href="squid.html" data-transition="pop"> 
+
+<div class="description"> The colossal Squid  </h3> </div>
+ 
+<li data-icon="carat-r"><a style="background:" href="forces.html" data-transition="pop">
+
+
+<div class="description"> Awesome Forces  </h3> </div>
+
+
+
+ 
+ 
+<li data-icon="carat-r"><a style="background:white" href="sea.html" data-transition="pop">
+ 
+<div class="description"> mountains to sea  </h3> </div> </a> </li> 
+
+<center>
+ <div class="heading">
+ <h1>Overall Experience </h1>
+  </div>
+
+  
+
+  <div data-role="main" class="ui-content">
+    <form method="post" >
+      <label for="points" >Rate out of 5!</label>
+      <input type="range" name="points" id="points" value="0" min="0" max="5" data-show-value="true" data-popup-enabled="true" style="background:orange">
+      <input type="submit" data-inline="true" value="Submit" style="background:orange">
+    </form>
+
+
+       
+ 
+
+<center>
+ 
+ <div style="background:orange" data-role="footer" style="text-align:center;">
+    <a style="background:orange" href="index.html" data-ajax="false"class= "ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <a style="background:orange" href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-grid ui-btn-icon-left">Top Rated exhibits</a>
+    <a style="background:orange" href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-star ui-btn-icon-left">Rate Exhibits</a>
+  </div>
+</div>
+</center>
+
+
+ 
+</html>
+

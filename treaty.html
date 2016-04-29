@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+<title>mobile app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<link href="style.css" rel="stylesheet">
+<script src="app.js"></script>
+
+</head>
+
+
+<body>
+<div data-role="header" style="background:#FF9B0A">
+<h1><span style="color:white;">Level Four</h1>
+  <a  style="background:#FF9B0A" href="level4.html" class="ui-btn ui-btn-right ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left" <h1><span style="color:white;">Back</a>
+</div>
+ 
+<div data-role="content">
+ 
+<div class="choice_list">
+
+ 
+<center>
+<div class="heading">
+<h1>You are on level Four</h1>
+
+<img src="img/treaty.jpg" alt="" width="50%" height="50%">
+
+<div class="heading2">
+<h1>Treaty of Waitangi: Signs of a nation</h1>
+</div>
+
+
+
+<div class="heading2">
+<h2>Rate your experience and see what other people think using the live stream! </h2>
+</div>
+
+
+ <div style="background:white" data-role="footer" style="text-align:center;">
+
+<input type="text" placeholder="Rate your experience out of 5!" id="Rating">
+    <input type="text" placeholder="Any comments about the exhibit?" id="Comments">
+    <input type="text" placeholder="Suggestions to make the experience better?" id="Suggestions">
+<button type="submit" id="submit" class="btn btn-success" style="background:orange">Send Comments</button>
+    
+
+
+<div id="yield">
+
+</div>
+
+
+<script id="home-template" type="text/x-handlebars-template">
+
+  
+
+<div>
+{{#each exhibition}}
+<div>
+<p>Rating : {{Rating}}</p>
+<p>Comments : {{Comments}} </p>
+<p>Suggestions : {{Suggestions}} </p>
+<hr>
+</div>
+{{/each}}
+</div>
+</script>
+
+
+<script src="app.js"></script>
+
+	
+<center>
+ 
+ <div style="background:orange" data-role="footer" style="text-align:center;">
+    <a style="background:orange" href="index.html" data-ajax="false"class= "ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <a style="background:orange" href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-grid ui-btn-icon-left">Top Rated exhibits</a>
+    <a style="background:orange" href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-star ui-btn-icon-left">Rate your experience</a>
+  </div>
+</div>
+</center>
+</html>
