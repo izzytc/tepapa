@@ -1,6 +1,6 @@
 //our firebase reference
 
-var data = new Firebase('https://level4.firebaseio.com/');
+var data = new Firebase('https://levelltwo.firebaseio.com/');
 
 //on change get data
 data.on("value", function(snapshot) {
